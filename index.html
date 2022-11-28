@@ -57,7 +57,7 @@
       <section class="hero overlay">
         <div class="hero-content">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button pointer">
+          <button data-modal-open type="button" class="hero-button pointer">
             Order Service
           </button>
         </div>
@@ -370,6 +370,8 @@
             </li>
           </ul>
         </div>
+
+        <!-- <button class="btn">Practice</button> -->
       </section>
     </main>
     <!-- Футер -->
@@ -425,5 +427,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="button-close">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images1/sprite1.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
